@@ -7,11 +7,11 @@ const ExpenseItem = (props) => {
 
     const [title, setTitle] = useState(props.title); 
     /*react hooks can only be called inside component functions!
-    //the useState function takes one arg and returns a state variable [title] and a state updating function [setTitle]
-    //when the setTitle function is called, the whole component is then called again and the value is updated */
+    the useState function takes one arg and returns a state variable [title] and a state updating function [setTitle]
+    when the setTitle function is called, the whole component is then called again and the value is updated */
 
     const clickHandler = () => {
-        setTitle('Updated');
+        setTitle('Updated'); //
         console.log(title);
     }; /*best practice to not put too much logic within JSX code
         also, best practice to have the word 'handler' in any function that handles an event.
